@@ -1,1 +1,70 @@
 /* Module.scss */
+
+header[role="banner"]{
+    background: url('../img/header-monogram.jpg') top no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-left: 1000px;
+    padding-right: 500px;
+    padding-bottom: 20px;
+}
+
+
+nav[role="navigation"]{
+    position: absolute;
+    text-align: right;
+    margin-top: -30px;
+    margin-left: 200px;
+}
+
+.main-projects img{
+    margin-left: 400px;
+    //margin-top: 20px;
+    filter:grayscale(1);
+    transition: all 300ms ease-in-out;
+    &:hover {
+        filter: grayscale(0);
+        transition: all 300ms ease-in-out;
+    }
+}
+
+#wrapper .text {
+    position:relative;
+    background-color: #fff;
+    border-radius:4px;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    left: 400px;
+    bottom: 70px;
+    visibility:hidden;
+    transition: all 300ms linear;
+    color: #de9898;
+    font-size: 16px;
+    @include body-font-light;
+}
+
+#wrapper:hover .text {
+    background-color: darken(#fff, 70%);
+    transition: all 500ms linear;
+    visibility:visible;
+}
+
+.triangle-frame-1 {
+    margin-top: -60px;
+    padding-left: 300px;
+    padding-top: 200px;    
+}
+
+.triangle-frame-2 {
+    padding-left: 1050px;
+    padding-top: -100px;
+}
+
+footer[role="contentinfo"]{
+    position: absolute;
+    align-content: center bottom;
+    margin-top: 150px;
+    padding-left: 100px;
+    text-align: center;
+}

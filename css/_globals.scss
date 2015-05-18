@@ -25,3 +25,12 @@
     font-style: normal;
     font-weight: 700;
 }
+
+$background-color: #3e3e3e;
+$base-font-size: 22px;
+$color: #e5a1a1;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size) { 
+    @return ($px / $base) * 1em; 
+} 

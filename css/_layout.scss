@@ -1,2 +1,10 @@
 /* Layout.scss */
 
+@media screen and (min-width: $mobile) and (max-width: $desktop) {
+    .row-no-gutter [class^="col-4"] {
+        margin: 0;
+    }
+    .gallery .col-4 {
+        width: calc(50% - #{$gutter});    
+    }
+}
