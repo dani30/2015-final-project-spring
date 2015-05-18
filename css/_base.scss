@@ -28,6 +28,15 @@ h1 {
     margin-left: -720px;
 }
 
+h2 {
+    font-size: em(32px);
+    color: #4b4b4b;
+    //color: #e5bbbb;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 270px;
+}
+
 b, strong{
     @include body-font-bold;
 }
@@ -35,7 +44,7 @@ b, strong{
 a {
     color: #de9898;
     @include body-font-light;
-    line-height: 0;
+    line-height: 1;
     text-decoration: none;
     transition: all 300ms linear;
 } 
@@ -46,9 +55,14 @@ a:hover {
 } 
 
 p {
-    color: #de9898;
-    font-size: 16px;
+    color: #4b4b4b;
+    font-size: em(18px);
     @include body-font-light;
-    line-height: 0;
+    line-height: 1.25;
     text-decoration: 0;
 }
+
+ul {
+    @include body-font-light;
+    font-size: em(14px);
+} 
