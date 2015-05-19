@@ -6,7 +6,7 @@ header[role="banner"]{
     padding-top: 200px;
     padding-left: 1000px;
     padding-right: 310px;
-    padding-bottom: 20px;
+    padding-bottom: 200px;
 }
 
 
@@ -20,12 +20,12 @@ nav[role="navigation"]{
 section[class="row slider-content"]{
     margin-left: 680px;
     margin-top: -500px;
-
 }    
 
 .main-projects img{
     margin-left: 400px;
-    //margin-top: 20px;
+    margin-top: -40px;
+    position: relative;
     filter:grayscale(1);
     transition: all 300ms ease-in-out;
     &:hover {
@@ -36,7 +36,7 @@ section[class="row slider-content"]{
 
 .wide-image-projects img{
     background-size: cover;
-    margin-top: -.5px;
+    margin-top: -180px;
     margin-left: 10px;
     max-width: 300%;
 }
@@ -64,14 +64,15 @@ section[class="row slider-content"]{
 }
 
 .triangle-frame-1 {
-    margin-top: -60px;
-    padding-left: 300px;
-    padding-top: 200px;    
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 300px;
 }
 
 .triangle-frame-2 {
-    padding-left: 1050px;
-    padding-top: -100px;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 1025px;
 }
 
 .collapse-wrap {
