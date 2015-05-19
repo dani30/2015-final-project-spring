@@ -1,11 +1,11 @@
 /* Module.scss */
 
 header[role="banner"]{
-    background: url('../img/header-monogram.jpg') top no-repeat;
-    background-size: cover;
+    background: url('../img/header-monogram-opt.jpg') top no-repeat;
+    background-size: contain;
     padding-top: 200px;
     padding-left: 1000px;
-    padding-right: 500px;
+    padding-right: 310px;
     padding-bottom: 20px;
 }
 
@@ -14,8 +14,14 @@ nav[role="navigation"]{
     position: absolute;
     text-align: right;
     margin-top: -30px;
-    margin-left: 200px;
+    margin-left: 130px;
 }
+
+section[class="row slider-content"]{
+    margin-left: 680px;
+    margin-top: -500px;
+
+}    
 
 .main-projects img{
     margin-left: 400px;
@@ -26,6 +32,13 @@ nav[role="navigation"]{
         filter: grayscale(0);
         transition: all 300ms ease-in-out;
     }
+}
+
+.wide-image-projects img{
+    background-size: cover;
+    margin-top: -.5px;
+    margin-left: 10px;
+    max-width: 300%;
 }
 
 #wrapper .text {

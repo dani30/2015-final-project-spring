@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
     @include headline-font;
     line-height: 1;
 }
@@ -31,10 +31,38 @@ h1 {
 h2 {
     font-size: em(32px);
     color: #4b4b4b;
-    //color: #e5bbbb;
     position: absolute;
     margin-top: 80px;
     margin-left: 270px;
+}
+
+h3 {
+    @include headline-font;
+    font-size: em(32px);
+    color: #4b4b4b;
+    position: relative;
+    line-height: 1;
+    margin-top: 35px;
+    margin-left: 75px;
+}
+
+h4 {
+    @include body-font-light;
+    font-size: em(16px);
+    color: #de9898;
+    position: relative;
+    line-height: 0; 
+    margin-left: 75px;
+}
+
+h5 {
+    @include body-font-light;
+    font-size: em (12px);
+    color: #4b4b4b;
+    position: relative;
+    line-height: 1.25;
+    margin-top: 35px;
+    margin-left: 75px;
 }
 
 b, strong{
